@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://aurared4ik.github.io/landrp.github.io/style.css">
     <title>Форум - LandRP</title>
 </head>
 <body>
@@ -12,25 +12,25 @@
     </header>
     <nav>
         <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/about">О нас</a></li>
-            <li><a href="/mods">Моды</a></li>
-            <li><a href="/forum">Форум</a></li>
-            <li><a href="/contact">Контакты</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="mods.html">Моды</a></li>
+            <li><a href="forum.html">Форум</a></li>
+            <li><a href="contact.html">Контакты</a></li>
         </ul>
     </nav>
     <main>
         <h2>Оставьте ваше сообщение:</h2>
-        <form method="POST">
+        <form action="https://formsubmit.co/your_email@example.com" method="POST">
             <input type="text" name="nickname" placeholder="Введите никнейм" required>
             <textarea name="message" placeholder="Введите сообщение" required></textarea>
             <button type="submit" class="download-button">Отправить</button>
         </form>
         <h3>Сообщения:</h3>
         <ul>
-            {% for message in messages %}
-                <li><strong>{{ message.nickname }}</strong>: {{ message.text }}</li>
-            {% endfor %}
+            <li><strong>Пользователь1</strong>: Привет всем!</li>
+            <li><strong>Пользователь2</strong>: Как дела?</li>
+            <!-- Добавьте дополнительные сообщения здесь -->
         </ul>
     </main>
     <footer>
