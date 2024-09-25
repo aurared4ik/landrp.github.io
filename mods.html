@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Моды - LandRP</title>
+</head>
+<body>
+    <header>
+        <h1>Моды</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">О нас</a></li>
+            <li><a href="/mods">Моды</a></li>
+            <li><a href="/forum">Форум</a></li>
+            <li><a href="/contact">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Здесь вы можете скачать наши моды для Minecraft:</h2>
+        <ul>
+            <li><a href="{{ url_for('files', filename='mods.zip') }}" class="download-button">Скачать моды</a></li>
+        </ul>
+
+        <h3>Инструкция по скачиванию модов:</h3>
+        <ol>
+            <li>Нажмите на кнопку "Скачать моды".</li>
+            <li>Сохраните файл <strong>mods.zip</strong> на вашем компьютере.</li>
+            <li>Откройте папку, куда вы сохранили файл.</li>
+            <li>Разархивируйте файл, используя программу для работы с архивами (например, WinRAR или 7-Zip).</li>
+            <li>Перенесите извлечённые файлы в папку <strong>mods</strong> вашего клиента Minecraft.</li>
+            <li>Запустите Minecraft и выберите профиль, поддерживающий моды.</li>
+            <li>Приятной игры!</li>
+        </ol>
+    </main>
+    <footer>
+        <p>© 2024 LandRP. Все права защищены.</p>
+    </footer>
+</body>
+</html>
